@@ -1,0 +1,183 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0;
+    /*margines dol-ora,lewo,prawo. Pozbywanie sie odleglosci miedzy obiektami*/
+    /*    font-family: Lato&amp, arial;*/
+    font-family: 'Lato', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* . klasa, ID=# */
+
+body {
+    /*    background: -webkit-gradient(linear, 80% 20%, 10% 21%, from(#38DAFF), to(#E3FFFF));*/
+    font-family: Oswald;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.backgroundPhoto {
+    background-image: url(img/victor-freitas-546919-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: auto;
+
+}
+
+.nav {
+    background-color: dodgerblue;
+}
+
+.nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav li {
+    width: 100%;
+}
+
+.nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.nav a:hover,
+.nav a:focus {
+    background-color: #78bcff;
+}
+
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.container h1 {
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    font-family: Oswald;
+    text-shadow: 2px 2px black;
+}
+
+.container hr {
+    color: white;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container article {
+    color: white;
+    font-size: 20px;
+    font-family: Oswald;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.container a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.content {
+    padding: 50px 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+}
+
+@media screen and (max-width: 584px) {
+    .container {
+        width: 80%;
+
+    }
+    .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.box {
+    text-align: center;
+    margin: 15px 15px;
+    /*margines dol-ora,lewo,prawo. Pozbywanie sie odleglosci miedzy obiektami*/
+    padding: 15px;
+    min-width: 253px;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 5px #000000;
+    box-shadow: 5px 5px 5px #000000;
+    opacity: 0.8;
+
+}
+
+.box ul li {
+    list-style: none;
+}
+
+#result {
+
+    margin: 15px auto;
+    border: 3px solid;
+    border-radius: 25px;
+
+}
+
+input {
+    margin-bottom: 15px;
+    margin-left: 5px;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+button {
+    font-family: Oswald;
+    font-size: 20px;
+    width: 64px;
+    height: 40px;
+    background-color: dodgerblue;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #78bcff;
+}
+
+
+.footer {
+    color: white;
+    text-align: center;
+    background-color: dodgerblue;
+
+}

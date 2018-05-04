@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- responsywnosc strony-->
+
+    <title>Oblicz swoje BMI</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <nav class=nav>
+        <ul>
+            <li>
+                <a class="active" href="#about">Kalkulator BMI</a>
+            </li>
+            <li>
+                <a href="#offer">Kalkulator BMR</a>
+            </li>
+            <li>
+                <a href="#projects">Wskaźnik WHR</a>
+            </li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="backgroundPhoto">
+
+        <div class=container>
+            <h1>KALKULATOR BMI</h1>
+            <hr>
+
+            <article>Współczynnik BMI został opracowany wyłącznie dla dorosłych i nie może być stosowana u dzieci.&nbsp Oznaczanie wskaźnika masy ciała ma znaczenie w ocenie zagrożenia chorobami związanymi z nadwagą i otyłością, np. cukrzycą, chorobą niedokrwienną serca, miażdżycą.&nbsp Podwyższona wartość BMI związana jest ze zwiększonym ryzykiem wystąpienia takich chorób. Czytaj więcej na
+                <a href="https://pl.wikipedia.org/wiki/Wska%C5%BAnik_masy_cia%C5%82a">Wikipedia.org</a></article>
+            <div class=content>
+                <div class="box">
+                    <h2>Zapisz poniżej swoje dane</h2>
+                    </br>
+                    &nbsp Waga: <input type="number" id="kgInput" placeholder="Wprowadź wagę w kg"> </br>
+                    Wzrost: <input type="number" id="heightInput" placeholder="Wprowadź wzrost w cm"></br>
+                    <button id=buttonBmi>Oblicz</button>
+                </div>
+                <div class="box">
+                    <h2>Legenda z wynikami</h2>
+
+                    <ul>
+                        <li>Poniżej 18,5 – niedowaga</li>
+                        <li>Pomiędzy 18,5–24,99 – wartość prawidłowa</li>
+                        <li>Powyżej 25,0 – nadwaga</li>
+                    </ul>
+                    <h2>Wynik</h2>
+                    <hr color=black>
+                    <div id=result>Wynik 23.3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <footer class="footer">
+        Copyright &copy; MM 2018 tel. 123-123-123 Photo by Victor Freitas on Unsplash
+    </footer>
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
